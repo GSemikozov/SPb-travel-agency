@@ -9,3 +9,23 @@ $(document).ready(function(){
         this.play();
     });
 });
+/*======================= full columns height ========================*/
+$(document).ready(function() {
+    resizeContent();
+    $(window).resize(resizeContent);
+});
+
+function resizeContent() {
+    if ($('div#list').hasClass('active')) {
+        var mainDivs = $(".column");
+        var maxHeight = 0;
+        for (var i = 0; i < mainDivs.length; ++i) {
+            if (maxHeight < $(mainDivs[i]).height()) {
+                maxHeight = $(mainDivs[i]).height();
+            }
+        }
+        for (var e = 0; e < mainDivs.length; ++e) {
+            $(mainDivs[e]).height(maxHeight);
+        }
+    }
+}
