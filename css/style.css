@@ -198,7 +198,7 @@ a.contact-btn:focus {
 /*======================================= main page Header FINISH =======================================*/
 /*======================================= main page Content START =======================================*/
 .heading-wrap {
-    margin: 180px 0 130px;
+    margin: 0 0 30px 0;
 }
 .heading {
     color: #ffffff;
@@ -445,6 +445,12 @@ a.content_nav__item-6:hover {
         float: none;
     }
 }
+@media (max-width: 600px) {
+    .wrapper, .content {
+        display: block;
+        height: auto;
+    }
+}
 /*==================================== main page Media Queries FINISH =====================================*/
 /*=========================================== main page FINISH ============================================*/
 
@@ -456,8 +462,12 @@ a.content_nav__item-6:hover {
     width: 100%;
     display: table;
 }
+.walking-tour_content {
+    display: table-row;
+    height: 100%;
+}
 /*=================== walking tours (and for all inner pages) Header START ==============================*/
-.walking-tour_wrapper > .content > header {
+.walking-tour_wrapper > .walking-tour_content > header {
     padding: 50px 0 30px;
     background: #f0f0f0;
     box-shadow: inset 0 -2px 2px rgba(230,230,230, .5);
@@ -809,13 +819,19 @@ a.content_nav__item-6:hover {
     }
 }
 @media (max-width: 767px) {
-    .walking-tour_wrapper > .content > header {
+    .walking-tour_wrapper > .walking-tour_content > header {
         padding: 0;
     }
     .walking-tour_wrapper .navbar-header {
         background: #f0f0f0;
         margin-bottom: 0;
         padding-bottom: 0;
+    }
+}
+@media (max-width: 600px) {
+    .walking-tour_wrapper, .walking-tour_content {
+        display: block;
+        height: auto;
     }
 }
 /*================================== inner pages Media Queries FINISH ===================================*/
