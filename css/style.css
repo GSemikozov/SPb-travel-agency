@@ -291,6 +291,7 @@ a.content_nav__item-6:hover {
 /*======================================= main page Footer START =======================================*/
 .footer {
     width: 100%;
+    height: auto;
     background: #171717;
     color: #ffffff;
     font-size: 13px;
