@@ -29,3 +29,12 @@ function resizeContent() {
         }
     }
 }
+/*======================= datepicker activate ========================*/
+$(document).ready(function() {
+
+    $('#datetimepicker').datetimepicker({
+            pickTime: false,
+            language: 'ru'
+        }
+    );
+});

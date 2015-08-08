@@ -7,6 +7,7 @@
     <title>Walking tours</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -14,14 +15,11 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <script>
-        document.createElement('video');
-    </script>
     <![endif]-->
 </head>
 <body>
-<div class="walking-tour_wrapper">
-    <div class="walking-tour_content">
+<div class="inner-pages_wrapper">
+    <div class="inner-pages_content">
         <header>
             <nav class="navbar navbar-default navbar-main">
                 <div class="container">
@@ -129,7 +127,8 @@
                 </div>
             </nav>
         </header>
-        <article class="content_inner">
+        <article class="content_inner bg-1">
+            <img src="images/bg_inner__lamp.png" class="content_inner__bg_lamp  hidden-xs" alt="lamp">
             <section class="container">
                 <div class="row">
                     <ol class="breadcrumb">
@@ -169,7 +168,7 @@
                                         творил самый таинственный, уважаемый и известный во всем мире классик русской литературы.
                                     </p>
                                     <div class="caption-block_price">от 2900р.</div>
-                                    <a href="" class="caption-block_order-btn">заказать</a>
+                                    <a href="" class="caption-block_order-btn" data-toggle="modal" data-target=".modal">заказать</a>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-4">
@@ -184,7 +183,7 @@
                                         творил самый таинственный, уважаемый и известный во всем мире классик русской литературы.
                                     </p>
                                     <div class="caption-block_price">от 3100р.</div>
-                                    <a href="" class="caption-block_order-btn">заказать</a>
+                                    <a href="" class="caption-block_order-btn" data-toggle="modal" data-target=".modal">заказать</a>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-4">
@@ -199,7 +198,7 @@
                                         творил самый таинственный, уважаемый и известный во всем мире классик русской литературы.
                                     </p>
                                     <div class="caption-block_price">от 3900р.</div>
-                                    <a href="" class="caption-block_order-btn">заказать</a>
+                                    <a href="" class="caption-block_order-btn" data-toggle="modal" data-target=".modal">заказать</a>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-4">
@@ -214,7 +213,7 @@
                                         творил самый таинственный, уважаемый и известный во всем мире классик русской литературы.
                                     </p>
                                     <div class="caption-block_price">от 3300р.</div>
-                                    <a href="" class="caption-block_order-btn">заказать</a>
+                                    <a href="" class="caption-block_order-btn" data-toggle="modal" data-target=".modal">заказать</a>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-4">
@@ -229,7 +228,7 @@
                                         творил самый таинственный, уважаемый и известный во всем мире классик русской литературы.
                                     </p>
                                     <div class="caption-block_price">от 2450р.</div>
-                                    <a href="" class="caption-block_order-btn">заказать</a>
+                                    <a href="" class="caption-block_order-btn" data-toggle="modal" data-target=".modal">заказать</a>
                                 </div>
                             </div>
                         </div>
@@ -251,7 +250,7 @@
                                     </p>
                                     <div class="pull-right">
                                         <div class="caption-block_price">от 2900р.</div>
-                                        <a href="" class="caption-block_order-btn">заказать</a>
+                                        <a href="" class="caption-block_order-btn" data-toggle="modal" data-target=".modal">заказать</a>
                                     </div>
                                 </div>
                             </div>
@@ -268,7 +267,7 @@
                                     </p>
                                     <div class="pull-right">
                                         <div class="caption-block_price">от 3100р.</div>
-                                        <a href="" class="caption-block_order-btn">заказать</a>
+                                        <a href="" class="caption-block_order-btn" data-toggle="modal" data-target=".modal">заказать</a>
                                     </div>
                                 </div>
                             </div>
@@ -285,7 +284,7 @@
                                     </p>
                                     <div class="pull-right">
                                         <div class="caption-block_price">от 3900р.</div>
-                                        <a href="" class="caption-block_order-btn">заказать</a>
+                                        <a href="" class="caption-block_order-btn" data-toggle="modal" data-target=".modal">заказать</a>
                                     </div>
                                 </div>
                             </div>
@@ -302,7 +301,7 @@
                                     </p>
                                     <div class="pull-right">
                                         <div class="caption-block_price">от 3300р.</div>
-                                        <a href="" class="caption-block_order-btn">заказать</a>
+                                        <a href="" class="caption-block_order-btn" data-toggle="modal" data-target=".modal">заказать</a>
                                     </div>
                                 </div>
                             </div>
@@ -319,7 +318,7 @@
                                     </p>
                                     <div class="pull-right">
                                         <div class="caption-block_price">от 2450р.</div>
-                                        <a href="" class="caption-block_order-btn">заказать</a>
+                                        <a href="" class="caption-block_order-btn" data-toggle="modal" data-target=".modal">заказать</a>
                                     </div>
                                 </div>
                             </div>
@@ -366,14 +365,58 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Форма заказа</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="datetimepicker">Желаемая дата проведения экскурсии</label>
+                            <input type='text' required class="form-control" id='datetimepicker' placeholder="Дата проведения">
+                        </div>
+                        <div class="form-group">
+                            <label for="language">Язык проведения</label>
+                            <select class="form-control" required id="language">
+                                <option>Русский</option>
+                                <option>English</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="number">Количественный состав группы</label>
+                            <input type="number" required min="1" max="100" class="form-control" id="number" placeholder="Количество">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">ФИО заказчика</label>
+                            <input type="text" required class="form-control" id="name" placeholder="ФИО">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Номер телефона</label>
+                            <input type="tel" pattern="(\+?\d[- .]*){7,13}" required class="form-control" id="phone" placeholder="Номер телефона">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="button modal-btn" data-dismiss="modal">Отмена</button>
+                    <button type="submit" class="button modal-btn">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/moment-with-locales.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/dropdown-menu.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
 <script src="js/custom.js"></script>
 </body>
 </html>

@@ -198,7 +198,7 @@ a.contact-btn:focus {
 /*======================================= main page Header FINISH =======================================*/
 /*======================================= main page Content START =======================================*/
 .heading-wrap {
-    margin: 0 0 30px 0;
+    margin: 60px 0;
 }
 .heading {
     color: #ffffff;
@@ -336,6 +336,11 @@ a.content_nav__item-6:hover {
 }
 /*====================================== main page Footer FINISH =======================================*/
 /*=================================== main page Media Queries START ====================================*/
+@media only screen and (min-width: 1367px) {
+    .heading-wrap {
+        margin: 100px 0;
+    }
+}
 @media (min-width: 768px) {
     .navbar-header, .navbar-collapse_custom {
         margin-bottom: 20px;
@@ -457,86 +462,102 @@ a.content_nav__item-6:hover {
 
 /*======================================= walking tours page START ========================================*/
 /*===== wrapper for all inner pages ======*/
-.walking-tour_wrapper {
+.inner-pages_wrapper {
     background: #ffffff;
     height: 100%;
     width: 100%;
     display: table;
 }
-.walking-tour_content {
+.inner-pages_content {
     display: table-row;
     height: 100%;
 }
 /*=================== walking tours (and for all inner pages) Header START ==============================*/
-.walking-tour_wrapper > .walking-tour_content > header {
+.inner-pages_wrapper > .inner-pages_content > header {
     padding: 50px 0 30px;
     background: #f0f0f0;
     box-shadow: inset 0 -2px 2px rgba(230,230,230, .5);
 }
-.walking-tour_wrapper .logo {
+.inner-pages_wrapper .logo {
     float: left;
     margin-bottom: 20px;
 }
-.walking-tour_wrapper .navbar-header, .walking-tour_wrapper .navbar-collapse_custom {
+.inner-pages_wrapper .navbar-header, .inner-pages_wrapper .navbar-collapse_custom {
     margin-bottom: 20px;
 }
-.walking-tour_wrapper .navbar-main {
+.inner-pages_wrapper .navbar-main {
     margin-bottom: 0;
 }
-.walking-tour_wrapper .navbar-main .navbar-main_content > li > a {
-    color: #333333;
+.inner-pages_wrapper .navbar-main .navbar-main_content > li > a {
+    color: #7a7a7a;
     text-shadow: none;
 }
-.walking-tour_wrapper .navbar-main .navbar-main_content > li > a:hover,
-.walking-tour_wrapper .navbar-main .navbar-main_content > li > a:focus {
-    color: #a0a6ab;
+.inner-pages_wrapper .navbar-main .navbar-main_content > li > a:hover,
+.inner-pages_wrapper .navbar-main .navbar-main_content > li > a:focus {
+    color: #aaa;
 }
-.walking-tour_wrapper .navbar-main .navbar-main_content > .active > a,
-.walking-tour_wrapper .navbar-main .navbar-main_content > .active > a:hover,
-.walking-tour_wrapper .navbar-main .navbar-main_content > .active > a:focus {
-    color: #a0a6ab;
+.inner-pages_wrapper .navbar-main .navbar-main_content > .active > a,
+.inner-pages_wrapper .navbar-main .navbar-main_content > .active > a:hover,
+.inner-pages_wrapper .navbar-main .navbar-main_content > .active > a:focus {
+    color: #ddd;
 }
-.walking-tour_wrapper .navbar-main .navbar-main_content > .open > a,
-.walking-tour_wrapper .navbar-main .navbar-main_content > .open > a:hover,
-.walking-tour_wrapper .navbar-main .navbar-main_content > .open > a:focus {
-    color: #a0a6ab;
+.inner-pages_wrapper .navbar-main .navbar-main_content > .open > a,
+.inner-pages_wrapper .navbar-main .navbar-main_content > .open > a:hover,
+.inner-pages_wrapper .navbar-main .navbar-main_content > .open > a:focus {
+    color: #ddd;
 }
-.walking-tour_wrapper .contact-btn {
+.inner-pages_wrapper .contact-btn {
     border: 1px solid #333333;
     color: #333333;
     text-shadow: none;
 }
-.walking-tour_wrapper .contact-btn:before, .walking-tour_wrapper .contact-btn:after {
+.inner-pages_wrapper .contact-btn:before, .inner-pages_wrapper .contact-btn:after {
     background-color: #333333;
     box-shadow: none;
 }
-.walking-tour_wrapper a.contact-btn:hover, .walking-tour_wrapper a.contact-btn:focus {
-    color: #a0a6ab;
+.inner-pages_wrapper a.contact-btn:hover, .inner-pages_wrapper a.contact-btn:focus {
+    color: #aaa;
 }
-.walking-tour_wrapper .navbar-toggle .icon-bar {
+.inner-pages_wrapper .navbar-toggle .icon-bar {
     background-color: #333333;
 }
 /*=================== walking tours (and for all inner pages) Header FINISH ==============================*/
 /*=================== walking tours (and for all inner pages) Footer START= ==============================*/
-.walking-tour_wrapper .footer {
+.inner-pages_wrapper .footer {
     background: #f0f0f0;
     color: #333333;
     box-shadow: inset 0 2px 2px rgba(230,230,230, .5);
 }
-.walking-tour_wrapper .footer_socials a {
+.inner-pages_wrapper .footer_socials a {
     border: 1px solid #333333;
     color: #333333;
 }
-.walking-tour_wrapper .footer_socials a:hover, .walking-tour_wrapper .footer_socials a:focus {
+.inner-pages_wrapper .footer_socials a:hover, .inner-pages_wrapper .footer_socials a:focus {
     text-decoration: none;
     color: #a0a6ab;
 }
 /*=================== walking tours (and for all inner pages) Footer FINISH ==============================*/
 /*===================================== walking tours Content START ======================================*/
 .content_inner {
+    position: relative;
     padding: 70px 0;
+}
+.content_inner.bg-1 {
     background: url("../images/bg_inner.png") no-repeat;
     background-size: 100% 100%;
+    min-height: 1100px;
+}
+.content_inner.bg-2 {
+
+}
+.content_inner section {
+    position: relative;
+    z-index: 3;
+}
+.content_inner__bg_lamp {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
 }
 .breadcrumb {
     padding: 0 0 0 15px;
@@ -604,7 +625,7 @@ a.content_nav__item-6:hover {
     border-top: none;
     padding: 35px 30px;
     margin-bottom: 30px;
-    background: #ffffff;
+    background: rgba(255,255,255, .8);
 }
 .card-img > img {
     width: 100%;
@@ -700,14 +721,18 @@ a.content_nav__item-6:hover {
 /*====================================== tours page Content START ======================================*/
 /* styles for slider */
 .carousel {
-    background-color: #fff;
+    background: #fff;
     margin: 0;
 }
 .carousel-inner {
     margin-bottom: 30px;
 }
-.carousel-inner .item {
-    box-shadow: inset 0 0 10px rgba(0,0,0, .5);
+.carousel-inner .item > div {
+    box-shadow: inset 0 0 0 10px rgba(0,0,0, .5);
+}
+.carousel-inner .item > div > img {
+    position: relative;
+    z-index: -2;
 }
 .indicators {
     list-style: none;
@@ -805,12 +830,40 @@ a.content_nav__item-6:hover {
     color: #333333;
 }
 /*===================================== contact page Content FINISH =====================================*/
+/*==================================== payment method Content START =====================================*/
+.payment_text-block {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 2em;
+}
+.payment_text-block__comment {
+    font-size: 16px;
+    color: #c2c2c2;
+}
+/*=================================== payment method Content FINISH =====================================*/
+/*=================================== modal order-form Content START ====================================*/
+.modal-btn {
+    border-radius: 0;
+    border: 1px solid #e5e5e5;
+    line-height: 2em;
+    font-size: 16px;
+    width: 140px;
+    background: transparent;
+    color: #333333;
+    font-weight: normal;
+    transition: .3s all;
+}
+.modal-btn:hover, .modal-btn:focus {
+    color: #ddd;
+    transition: .3s all;
+}
+/*=================================== modal order-form Content FINISH ===================================*/
 /*=================================== inner pages Media Queries START ===================================*/
 @media (min-width: 992px) {
 
 }
 @media (min-width: 768px) {
-    .walking-tour_wrapper .navbar-header {
+    .inner-pages_wrapper .navbar-header {
         margin-bottom: 0;
     }
 }
@@ -820,17 +873,20 @@ a.content_nav__item-6:hover {
     }
 }
 @media (max-width: 767px) {
-    .walking-tour_wrapper > .walking-tour_content > header {
+    .content_inner {
+        min-height: auto;
+    }
+    .inner-pages_wrapper > .inner-pages_content > header {
         padding: 0;
     }
-    .walking-tour_wrapper .navbar-header {
+    .inner-pages_wrapper .navbar-header {
         background: #f0f0f0;
         margin-bottom: 0;
         padding-bottom: 0;
     }
 }
 @media (max-width: 600px) {
-    .walking-tour_wrapper, .walking-tour_content {
+    .inner-pages_wrapper, .inner-pages_content {
         display: block;
         height: auto;
     }

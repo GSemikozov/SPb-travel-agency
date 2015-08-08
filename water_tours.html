@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Water tours</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="inner-pages_wrapper">
+    <div class="inner-pages_content">
+        <header>
+            <nav class="navbar navbar-default navbar-main">
+                <div class="container">
+                    <div class="row">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header no-padding col-sm-12 col-md-5 col-lg-6">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="col-xs-10 logo logo_inner" href="#">
+                                <img src="images/logo_inner.png" alt="logo" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6 no-padding">
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse navbar-collapse_custom" id="bs-example-navbar-collapse-1">
+                                <ul class="nav nav-justified navbar-main_content hidden-xs">
+                                    <li><a href="#">Главная</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">экскурсии <i class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">заказные<i class="fa fa-angle-right pull-right"></i></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">пешеходные</a></li>
+                                                    <li><a href="#">автобусные</a></li>
+                                                    <li><a href="#">водные</a></li>
+                                                    <li><a href="#">интерьерные</a></li>
+                                                    <li><a href="#">нестандартные</a></li>
+                                                    <li><a href="#">фотосессии</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">групповые<i class="fa fa-angle-right pull-right"></i></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">пешеходные</a></li>
+                                                    <li><a href="#">автобусные</a></li>
+                                                    <li><a href="#">водные</a></li>
+                                                    <li><a href="#">интерьерные</a></li>
+                                                    <li><a href="#">нестандартные</a></li>
+                                                    <li><a href="#">фотосессии</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">история спб</a></li>
+                                    <li><a href="#">контакты</a></li>
+                                    <li><a href="#">способы оплаты</a></li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-main_content visible-xs hidden-sm hidden-md hidden-lg">
+                                    <li><a href="#">Главная</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="excursions">экскурсии <i id="arrow-down" class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">заказные<i class="fa fa-angle-right pull-right"></i></a>
+                                                <ul class="dropdown-menu dropdown-menu-3level">
+                                                    <li><a href="#">пешеходные</a></li>
+                                                    <li><a href="#">автобусные</a></li>
+                                                    <li><a href="#">водные</a></li>
+                                                    <li><a href="#">интерьерные</a></li>
+                                                    <li><a href="#">нестандартные</a></li>
+                                                    <li><a href="#">фотосессии</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">групповые<i class="fa fa-angle-right pull-right"></i></a>
+                                                <ul class="dropdown-menu dropdown-menu-3level">
+                                                    <li><a href="#">пешеходные</a></li>
+                                                    <li><a href="#">автобусные</a></li>
+                                                    <li><a href="#">водные</a></li>
+                                                    <li><a href="#">интерьерные</a></li>
+                                                    <li><a href="#">нестандартные</a></li>
+                                                    <li><a href="#">фотосессии</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">история спб</a></li>
+                                    <li><a href="#">контакты</a></li>
+                                    <li><a href="#">способы оплаты</a></li>
+                                </ul>
+                                <div class="invisible-xs invisible-sm visible-md visible-lg">
+                                    <a href="" class="contact-btn">
+                                        <div class="contact-btn_shadow"></div>
+                                        <i class="fa fa-phone"></i>
+                                        Связаться с нами
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="container visible-sm invisible-xs">
+                                <div class="row">
+                                    <a href="" class="contact-btn">
+                                        <div class="contact-btn_shadow"></div>
+                                        <i class="fa fa-phone"></i>
+                                        Связаться с нами
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <article class="content_inner bg-1">
+            <img src="images/bg_inner__lamp-7.png" class="content_inner__bg_lamp  hidden-xs" alt="lamp">
+            <section class="container">
+                <div class="row">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#">Водные экскурсии</a>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section class="container clearfix">
+                <h1 class="content-heading">водные экскурсии</h1>
+                <ul class="tab-btn_menu"  role="tablist">
+                    <li role="presentation">
+                        <a href="#cards" aria-controls="cards" role="tab" data-toggle="tab"><i class="fa fa-th"></i></a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#list" aria-controls="list" role="tab" data-toggle="tab"><i class="fa fa-th-list"></i></a>
+                    </li>
+                </ul>
+            </section>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="cards">
+                    <section class="container">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4">
+                                <div class="col-xs-12 no-padding card-img">
+                                    <img src="images/dost.png" alt="dostoevskii" class="img-responsive">
+                                </div>
+                                <div class="col-xs-12 caption-block">
+                                    <h3 class="caption-block_header">петербург достоевского</h3>
+                                    <p class="caption-block_text">
+                                        Мы предлагаем Вам прогуляться по Петербургу Достоевского. Наш гид познакомит Вас с основными
+                                        моментами биографии великого писателя, покажет памятные места, где учился, работал, жил и
+                                        творил самый таинственный, уважаемый и известный во всем мире классик русской литературы.
+                                    </p>
+                                    <div class="caption-block_price">от 2900р.</div>
+                                    <a href="" class="caption-block_order-btn" data-toggle="modal" data-target=".modal">заказать</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="col-xs-12 no-padding card-img">
+                                    <img src="images/rastr.png" alt="rastrelli" class="img-responsive">
+                                </div>
+                                <div class="col-xs-12 caption-block">
+                                    <h3 class="caption-block_header">петербург растрелли</h3>
+                                    <p class="caption-block_text">
+                                        Мы предлагаем Вам прогуляться по Петербургу Достоевского. Наш гид познакомит Вас с основными
+                                        моментами биографии великого писателя, покажет памятные места, где учился, работал, жил и
+                                        творил самый таинственный, уважаемый и известный во всем мире классик русской литературы.
+                                    </p>
+                                    <div class="caption-block_price">от 3100р.</div>
+                                    <a href="" class="caption-block_order-btn" data-toggle="modal" data-target=".modal">заказать</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="col-xs-12 no-padding card-img">
+                                    <img src="images/esen.png" alt="esenin" class="img-responsive">
+                                </div>
+                                <div class="col-xs-12 caption-block">
+                                    <h3 class="caption-block_header">петербург есенина</h3>
+                                    <p class="caption-block_text">
+                                        Мы предлагаем Вам прогуляться по Петербургу Достоевского. Наш гид познакомит Вас с основными
+                                        моментами биографии великого писателя, покажет памятные места, где учился, работал, жил и
+                                        творил самый таинственный, уважаемый и известный во всем мире классик русской литературы.
+                                    </p>
+                                    <div class="caption-block_price">от 3900р.</div>
+                                    <a href="" class="caption-block_order-btn" data-toggle="modal" data-target=".modal">заказать</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="col-xs-12 no-padding card-img">
+                                    <img src="images/dal.png" alt="dal'" class="img-responsive">
+                                </div>
+                                <div class="col-xs-12 caption-block">
+                                    <h3 class="caption-block_header">петербург даля</h3>
+                                    <p class="caption-block_text">
+                                        Мы предлагаем Вам прогуляться по Петербургу Достоевского. Наш гид познакомит Вас с основными
+                                        моментами биографии великого писателя, покажет памятные места, где учился, работал, жил и
+                                        творил самый таинственный, уважаемый и известный во всем мире классик русской литературы.
+                                    </p>
+                                    <div class="caption-block_price">от 3300р.</div>
+                                    <a href="" class="caption-block_order-btn" data-toggle="modal" data-target=".modal">заказать</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="col-xs-12 no-padding card-img">
+                                    <img src="images/rossi.png" alt="rossi" class="img-responsive">
+                                </div>
+                                <div class="col-xs-12 caption-block">
+                                    <h3 class="caption-block_header">петербург росси</h3>
+                                    <p class="caption-block_text">
+                                        Мы предлагаем Вам прогуляться по Петербургу Достоевского. Наш гид познакомит Вас с основными
+                                        моментами биографии великого писателя, покажет памятные места, где учился, работал, жил и
+                                        творил самый таинственный, уважаемый и известный во всем мире классик русской литературы.
+                                    </p>
+                                    <div class="caption-block_price">от 2450р.</div>
+                                    <a href="" class="caption-block_order-btn" data-toggle="modal" data-target=".modal">заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="list">
+                    <section class="container">
+                        <div class="row">
+                            <div class="col-sm-12 card-wrapper">
+                                <div class="col-xs-12 col-sm-4 no-padding card-img column">
+                                    <img src="images/dost.png" alt="dostoevskii" class="img-responsive">
+                                </div>
+                                <div class="col-xs-12 col-sm-8 caption-block column">
+                                    <h3 class="caption-block_header">петербург достоевского</h3>
+                                    <p class="caption-block_text">
+                                        Мы предлагаем Вам прогуляться по Петербургу Достоевского. Наш гид познакомит Вас с основными
+                                        моментами биографии великого писателя, покажет памятные места, где учился, работал, жил и
+                                        творил самый таинственный, уважаемый и известный во всем мире классик русской литературы.
+                                    </p>
+                                    <div class="pull-right">
+                                        <div class="caption-block_price">от 2900р.</div>
+                                        <a href="" class="caption-block_order-btn" data-toggle="modal" data-target=".modal">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 card-wrapper">
+                                <div class="col-xs-12 col-sm-4 no-padding card-img column">
+                                    <img src="images/rastr.png" alt="rastrelli" class="img-responsive">
+                                </div>
+                                <div class="col-xs-12 col-sm-8 caption-block column">
+                                    <h3 class="caption-block_header">петербург растрелли</h3>
+                                    <p class="caption-block_text">
+                                        Мы предлагаем Вам прогуляться по Петербургу Достоевского. Наш гид познакомит Вас с основными
+                                        моментами биографии великого писателя, покажет памятные места, где учился, работал, жил и
+                                        творил самый таинственный, уважаемый и известный во всем мире классик русской литературы.
+                                    </p>
+                                    <div class="pull-right">
+                                        <div class="caption-block_price">от 3100р.</div>
+                                        <a href="" class="caption-block_order-btn" data-toggle="modal" data-target=".modal">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12  card-wrapper">
+                                <div class="col-xs-12 col-sm-4 no-padding card-img column">
+                                    <img src="images/esen.png" alt="esenin" class="img-responsive">
+                                </div>
+                                <div class="col-xs-12 col-sm-8 caption-block column">
+                                    <h3 class="caption-block_header">петербург есенина</h3>
+                                    <p class="caption-block_text">
+                                        Мы предлагаем Вам прогуляться по Петербургу Достоевского. Наш гид познакомит Вас с основными
+                                        моментами биографии великого писателя, покажет памятные места, где учился, работал, жил и
+                                        творил самый таинственный, уважаемый и известный во всем мире классик русской литературы.
+                                    </p>
+                                    <div class="pull-right">
+                                        <div class="caption-block_price">от 3900р.</div>
+                                        <a href="" class="caption-block_order-btn" data-toggle="modal" data-target=".modal">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 card-wrapper">
+                                <div class="col-xs-12 col-sm-4 no-padding card-img column">
+                                    <img src="images/dal.png" alt="dal'" class="img-responsive">
+                                </div>
+                                <div class="col-xs-12 col-sm-8 caption-block column">
+                                    <h3 class="caption-block_header">петербург даля</h3>
+                                    <p class="caption-block_text">
+                                        Мы предлагаем Вам прогуляться по Петербургу Достоевского. Наш гид познакомит Вас с основными
+                                        моментами биографии великого писателя, покажет памятные места, где учился, работал, жил и
+                                        творил самый таинственный, уважаемый и известный во всем мире классик русской литературы.
+                                    </p>
+                                    <div class="pull-right">
+                                        <div class="caption-block_price">от 3300р.</div>
+                                        <a href="" class="caption-block_order-btn" data-toggle="modal" data-target=".modal">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 card-wrapper">
+                                <div class="col-xs-12 col-sm-4 no-padding card-img column">
+                                    <img src="images/rossi.png" alt="rossi" class="img-responsive">
+                                </div>
+                                <div class="col-xs-12 col-sm-8 caption-block column">
+                                    <h3 class="caption-block_header">петербург росси</h3>
+                                    <p class="caption-block_text">
+                                        Мы предлагаем Вам прогуляться по Петербургу Достоевского. Наш гид познакомит Вас с основными
+                                        моментами биографии великого писателя, покажет памятные места, где учился, работал, жил и
+                                        творил самый таинственный, уважаемый и известный во всем мире классик русской литературы.
+                                    </p>
+                                    <div class="pull-right">
+                                        <div class="caption-block_price">от 2450р.</div>
+                                        <a href="" class="caption-block_order-btn" data-toggle="modal" data-target=".modal">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 col-md-3">
+                    <div class="footer_heading">
+                        <i class="fa fa-clock-o"></i>Режим работы:
+                    </div>
+                    <div class="footer_text">
+                        Ежедневно: с 08:00 до 22:00. Без выходных.
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2">
+                    <div class="footer_heading">
+                        <i class="fa fa-envelope"></i>E-mail:
+                    </div>
+                    <div class="footer_text">
+                        hello@peterburgstory.ru
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2">
+                    <div class="footer_heading">
+                        <i class="fa fa-phone"></i>Телефон:
+                    </div>
+                    <div class="footer_text">
+                        8 981 77 00 555
+                    </div>
+                </div>
+                <ul class="footer_socials">
+                    <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-odnoklassniki"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Форма заказа</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="datetimepicker">Желаемая дата проведения экскурсии</label>
+                            <input type='text' required class="form-control" id='datetimepicker' placeholder="Дата проведения">
+                        </div>
+                        <div class="form-group">
+                            <label for="language">Язык проведения</label>
+                            <select class="form-control" required id="language">
+                                <option>Русский</option>
+                                <option>English</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="number">Количественный состав группы</label>
+                            <input type="number" required min="1" max="100" class="form-control" id="number" placeholder="Количество">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">ФИО заказчика</label>
+                            <input type="text" required class="form-control" id="name" placeholder="ФИО">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Номер телефона</label>
+                            <input type="tel" pattern="(\+?\d[- .]*){7,13}" required class="form-control" id="phone" placeholder="Номер телефона">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="button modal-btn" data-dismiss="modal">Отмена</button>
+                    <button type="submit" class="button modal-btn">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/moment-with-locales.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/dropdown-menu.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
