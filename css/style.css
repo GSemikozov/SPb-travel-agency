@@ -591,11 +591,20 @@ a.content_nav__item-6:hover {
     text-transform: uppercase;
     color: #333333;
 }
+.search-field .form-control, .search-field .input-group-btn button {
+    border-radius: 0;
+}
+@media screen and (max-width: 992px) {
+    .search-field {
+        display: block;
+        margin-bottom: 40px;
+    }
+}
 .tab-btn_menu {
     list-style: none;
     margin: 0 0 35px 0;
     padding: 0;
-    float: right;
+    /*float: right;*/
 }
 .tab-btn_menu li {
     display: inline-block;
