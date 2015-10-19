@@ -630,9 +630,10 @@ a.content_nav__item-6:hover {
 }
 /*========= main tab =============*/
 .caption-block {
+    position: relative;
     border: 1px solid #e6e6e6;
     border-top: none;
-    padding: 35px 30px;
+    padding: 35px 30px 80px;
     margin-bottom: 30px;
     background: rgba(255,255,255, .8);
 }
@@ -670,11 +671,27 @@ a.content_nav__item-6:hover {
     text-decoration: underline;
     margin: 0 0 18px 0;
 }
-.caption-block_order-btn {
+/*.caption-block_order-btn {
     display: block;
     max-width: 167px;
     width: 100%;
     margin: 0 auto;
+    padding: 8px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: 1px solid #333333;
+    color: #333333;
+}*/
+.caption-block_order-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -84px;
+    display: block;
+    max-width: 167px;
+    width: 100%;
+    /* margin: 0 auto; */
     padding: 8px 0;
     text-align: center;
     text-transform: uppercase;
@@ -722,6 +739,9 @@ a.content_nav__item-6:hover {
     display: inline-block;
 }
 #list .caption-block_order-btn {
+    position: relative;
+    left: 0;
+    bottom: 0;
     display: inline-block;
     margin: 0 0 25px 0;
     width: 170px;
